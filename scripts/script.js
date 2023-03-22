@@ -54,6 +54,7 @@ function populateList (shoppingList){
         listItem.textContent = element;
         list.appendChild(listItem);
     });
+    
     //alternative
     // for (let item of shoppingList)
     // for (let i = 0 ; i < shoppingList.length ; i++)
@@ -61,6 +62,8 @@ function populateList (shoppingList){
 
 populateList(shoppingList)
 
+const list = document.querySelector('ul')
+list.classList.replace("circleList", "squareList")
 
 
 
